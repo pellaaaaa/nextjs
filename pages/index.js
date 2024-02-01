@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import Isi from "@/components/isi";
 
 export default function Layout({ children, metaTitle, metaDescription }) {
  return (
@@ -17,6 +18,8 @@ export default function Layout({ children, metaTitle, metaDescription }) {
    <Header />
    {children}
    <Footer />
+   {children}
+   <Isi />
   </div>
  );
 }
